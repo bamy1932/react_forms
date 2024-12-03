@@ -8,7 +8,7 @@ export default function SignUpForm({ setToken }) {
   const [lengthError, setLengthError] = useState(null);
   const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log("Hello");
+    // console.log("Hello");
     if (username.length < 6 || username.length > 15) {
       setLengthError(`Username must be between 6 and 15 characters.`);
     } else {
